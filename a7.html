@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset='utf-8'>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src=".\node_modules\d3\dist\d3.min.js"></script> 
+        <link rel="stylesheet" href=".\node_modules\bootstrap\dist\css\bootstrap.min.css">
+        <!-- <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/4AA3842F-1F7C-5344-947E-53954BFA006B/main.js" charset="UTF-8"></script> -->
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>AFRICA'S INTERNET STORY</h1><br/><br/><br/>
+                <h4>PROVENANCE</h4>
+                <p>The data for this visualization can be found on the <a href="http://data.un.org/Data.aspx?q=internet+use&d=ITU&f=ind1Code%3aI99H">UNdata</a> website. 
+                    It however was originally sourced from the International Telecommunications Union(<a href="https://www.itu.int/en/ITU-D/Statistics/Pages/definitions/default.aspx">ITU</a>), the main source of global, and internationally comparable, telecommunication/ICT statistics. Our purpose is to shed some light 
+                    on the growth of the world wide web since its invention in 1990 - using Africa as a use-case. 
+                    We aim to visually communicate the development process within the continent and compare with five(5) countries from the rest of the world.</p>
+            </div>
+                <br/><br/>
+
+            <h4>Bar Chart</h4>
+            <div class="btn-group btn-group-lg">
+                    <button class="btn-info" id="all-10" type="button" >All 10</button>  
+                    <button class="btn-info" id="ascending" type="button" >Sort by Ascending Values</button>
+                    <button class="btn-info" id="descending" type="button">Sort by Descending Values</button>
+                    <button class="btn-info" id="reset" type="button">Reset</button> 
+                    <button class="btn-info" id="alphabet" type="button">Sort Alphabetically</button>
+                    <button class="btn-info" id="top-5" type="button" >Top 5</button>
+                    <button class="btn-info" id="bottom-5" type="button" >Bottom 5</button>
+            </div>    
+            <svg id="svg0" style="background-color: lightgrey" width = 1500 height = 1200></svg>
+
+        </div>   
+
+
+        <script src="myscript.js"></script>
+        <script src=".\node_modules\jquery\dist\jquery.min.js"></script>
+        <script src=".\node_modules\bootstrap\dist\js\boostrap.min.js"></script>
+        <script src=".\node_modules\popper.js\dist\popper.min.js"></script>
+    </body>
+</html>
